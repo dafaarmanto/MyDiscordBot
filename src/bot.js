@@ -15,20 +15,15 @@ client.on("message", (message) => {
       .trim()
       .substring(PREFIX.length)
       .split(/\+s/);
-
-    if (CMD_NAME === "mabarML") {
+    
+    // Meaning: CMD_NAME is your prefix, you can change variable on top named PREFIX, 
+    // so to use, simply type on your discord channel !ping, and the bot will immediately reply "Pong!"
+    if (CMD_NAME === "ping") { 
       message.channel.send(
-        "Hi @everyone, waktunya kita mabar Mobile Legends!~"
+        "Pong!"
       );
     }
-
-    if (CMD_NAME === "tagged") {
-      message.channel.send("Hi <@405921343465324575>");
-    }
-
-    if (CMD_NAME === "roast") {
-      message.channel.send("Muka <@265422626866855937> kayak kontol >w<");
-    }
+    
   }
 });
 
